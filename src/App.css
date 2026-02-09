@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "VAzir-Light";
+  src: url(./../public/fonts/Vazir-Light.woff2);
+}
+
+@font-face {
+  font-family: "VAzir-Meduim";
+  src: url(./../public/fonts/Vazir-Medium.woff2);
+}
+
+@font-face {
+  font-family: "VAzir-Bold";
+  src: url(./../public/fonts/Vazir-Bold.woff2);
+}
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
