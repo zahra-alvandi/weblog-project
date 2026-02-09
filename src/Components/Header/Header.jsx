@@ -11,7 +11,7 @@ export default function Header() {
                 <a href="#" className='text-black px-5'>درباره ما</a>
             </div>
             <div>
-                <button className='ml-5'>خرید اشتراک</button>
+                <button className='ml-5 px-2 py-4 border-0'>خرید اشتراک</button>
                 <button>ورود یا ثبت نام</button>
             </div>
         </header>
