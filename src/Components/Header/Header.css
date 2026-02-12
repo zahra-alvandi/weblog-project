@@ -1,0 +1,11 @@
+.image-hero-width {
+  width: calc(100% - 50%);
+}
+
+.container-header {
+  width: calc(100% - 20%);
+}
+
+.text-container {
+  width: 762px;
+}
