@@ -1,17 +1,19 @@
-import React from 'react'
-import Header from './Components/Header/Header'
-import Article from './Components/Article/Article'
-import Footer from './Components/Footer/Footer'
-import './App.css'
+import React from "react";
+import Header from "./Components/Header/Header";
+import Article from "./Components/Article/Article";
+import Footer from "./Components/Footer/Footer";
+import "./App.css";
 
 export default function App() {
   return (
-    <div className='flex flex-col mx-60'>
-      <Header></Header>
+    <div>
+      <div className="flex flex-col m-4">
+        <Header></Header>
 
-      <Article></Article>
+        <Article></Article>
 
-      <Footer></Footer>
+        <Footer></Footer>
+      </div>
     </div>
-  )
+  );
 }

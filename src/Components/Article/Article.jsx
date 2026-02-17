@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Article() {
   return (
-    <div>
+    <div className="mx-60">
       <div className="my-5">
         <h1 className="text-xl font-bold">مقالات اخیر</h1>
       </div>
@@ -24,7 +24,7 @@ export default function Article() {
             </p>
           </main>
           <footer>
-            <div className="flex">
+            <div className="flex items-center gap-1">
               <i>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ export default function Article() {
               <span>نویسنده : </span>
               <span>محمدامین سعیدی راد</span>
             </div>
-            <div className="flex">
+            <div className="flex items-center gap-1">
               <i>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

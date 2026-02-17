@@ -4,7 +4,7 @@ import "./Header.css";
 export default function Header() {
   return (
     <div>
-      <header className="flex justify-between items-center h-20 ">
+      <header className="flex justify-between items-center h-20 mx-60">
         <div className="flex">
           <a href="#" className="text-black px-3">
             خانه
@@ -30,7 +30,7 @@ export default function Header() {
       </header>
 
       <main>
-        <section className=" mt-20 flex justify-between items-center">
+        <section className=" mt-20 flex justify-between items-center mx-60">
           <div>
             <div className="text-container ">
               <h1 className="text-5xl font-bold">

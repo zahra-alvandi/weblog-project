@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div>
+    <div className="mx-60">
       <div>
         <h5>پروژه رزومه‌ای می‌خواهید؟ با سبزلرن حرفه‌ای بسازید!</h5>
         <p>
@@ -11,7 +11,7 @@ export default function Footer() {
           واقعی، ما کنارتون هستیم تا مهارت‌هاتون رو به سطح بعدی ببرید!
         </p>
         <div className="flex gap-4">
-          <button className="flex">
+          <button className="flex items-center gap-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
