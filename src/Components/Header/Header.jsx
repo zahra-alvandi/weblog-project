@@ -20,10 +20,10 @@ export default function Header() {
           </a>
         </div>
         <div className="flex gap-2">
-          <button className="py-1 px-1.5 rounded-md text-[13px] cursor-pointer transition flex justify-center items-center gap-2 hover:opacity-55 bg-black text-white">
+          <button className="bg-black text-white py-[6px] px-4 text-sm rounded-md hover:opacity-75 transition cursor-pointer">
             خرید اشتراک
           </button>
-          <button className="py-1 px-1.5 rounded-md text-[13px] cursor-pointer transition flex justify-center items-center gap-2 hover:opacity-[0.85] border border-gray-500">
+          <button className="border border-gray-200 py-[6px] px-4 text-sm rounded-md cursor-pointer">
             ورود یا ثبت نام
           </button>
         </div>
