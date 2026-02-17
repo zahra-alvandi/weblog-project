@@ -23,6 +23,12 @@ export default function Article() {
               همه‌چیز رو با زبانی ساده و مثال‌های عملی پوشش دادیم!
             </p>
           </main>
+          <footer>
+            <div>
+              <span>نویسنده : </span>
+              <span>سعیدی راد</span>
+            </div>
+          </footer>
         </article>
       </div>
     </div>
