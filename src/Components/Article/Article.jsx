@@ -2,28 +2,31 @@ import React from "react";
 
 export default function Article() {
   return (
-    <div className="mx-60">
-      <div className="my-5">
-        <h1 className="text-xl font-bold">مقالات اخیر</h1>
-      </div>
+    <div className="">
+      {/* <div className="my-5">
+        <h1 className="text-3xl font-bold">مقالات اخیر</h1>
+      </div> */}
       <div>
         <article>
           <header>
             <img
-              src="/images/public/snowy.jpg"
+              src="/images/clay-banks-cReV-cbE2L4-unsplash.jpg"
+              className="object-cover w-full h-full rounded-2xl"
               alt=""
             />
           </header>
-          <main>
-            <h4 className="my-5">ساخت اولین پروژه رزومه‌ای با پایتون: قدم‌به‌قدم تا موفقیت</h4>
-            <p className="my-4">
+          <main className="border-b border-gray-300">
+            <h4 className="my-5 text-md font-bold">
+              ساخت اولین پروژه رزومه‌ای با پایتون: قدم‌به‌قدم تا موفقیت
+            </h4>
+            <p className="my-4 text-sm text-gray-500 text-justify">
               در این مقاله، به‌صورت گام‌به‌گام یاد می‌گیرید چطور یک پروژه ساده
               اما حرفه‌ای با پایتون بسازید که رزومه برنامه‌نویسی‌تون رو تقویت
               کنه. از ایده‌پردازی تا کدنویسی و نکات کلیدی برای ارائه پروژه،
               همه‌چیز رو با زبانی ساده و مثال‌های عملی پوشش دادیم!
             </p>
           </main>
-          <footer>
+          <footer className="flex justify-between mt-2.5">
             <div className="flex items-center gap-1">
               <i>
                 <svg
@@ -35,8 +38,8 @@ export default function Article() {
                   <path d="M10 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM3.465 14.493a1.23 1.23 0 0 0 .41 1.412A9.957 9.957 0 0 0 10 18c2.31 0 4.438-.784 6.131-2.1.43-.333.604-.903.408-1.41a7.002 7.002 0 0 0-13.074.003Z" />
                 </svg>
               </i>
-              <span>نویسنده : </span>
-              <span>محمدامین سعیدی راد</span>
+              <span className="text-[12px] text-gray-500">نویسنده : </span>
+              <span className="text-[12px]">محمدامین سعیدی راد</span>
             </div>
             <div className="flex items-center gap-1">
               <i>
@@ -53,7 +56,7 @@ export default function Article() {
                   />
                 </svg>
               </i>
-              <span>28 اسفند 1404</span>
+              <span className="text-[12px]">28 اسفند 1404</span>
             </div>
           </footer>
         </article>
