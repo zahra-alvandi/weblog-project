@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Article() {
+export default function Article(props) {
   return (
     <div className="">
       {/* <div className="my-5">
@@ -16,9 +16,7 @@ export default function Article() {
             />
           </header>
           <main className="border-b border-gray-300">
-            <h4 className="my-5 text-md font-bold">
-              ساخت اولین پروژه رزومه‌ای با پایتون: قدم‌به‌قدم تا موفقیت
-            </h4>
+            <h4 className="my-5 text-md font-bold">{props.title}</h4>
             <p className="my-4 text-sm text-gray-500 text-justify">
               در این مقاله، به‌صورت گام‌به‌گام یاد می‌گیرید چطور یک پروژه ساده
               اما حرفه‌ای با پایتون بسازید که رزومه برنامه‌نویسی‌تون رو تقویت
@@ -39,7 +37,7 @@ export default function Article() {
                 </svg>
               </i>
               <span className="text-[12px] text-gray-500">نویسنده : </span>
-              <span className="text-[12px]">محمدامین سعیدی راد</span>
+              <span className="text-[12px]">{props.author}</span>
             </div>
             <div className="flex items-center gap-1">
               <i>
