@@ -37,7 +37,7 @@ export default function Article({ title, author, img, price }) {
                 </svg>
               </i>
               <span className="text-[12px] text-gray-500">نویسنده : </span>
-              <span className="text-[12px]">{author}</span>
+              <span className="text-[12px]">{author || "تیم سبزبلاگ"}</span>
             </div>
             <div className="flex items-center gap-1">
               <i>
