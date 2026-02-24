@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 
-export default function Header() {
+export default function Header({ hasPlan }) {
   return (
     <div>
       <header className="flex justify-between items-center h-20 mx-60">
@@ -20,9 +20,11 @@ export default function Header() {
           </a>
         </div>
         <div className="flex gap-2">
-          <button className="bg-black text-white py-[6px] px-4 text-sm rounded-md hover:opacity-75 transition cursor-pointer">
-            خرید اشتراک
-          </button>
+          {!hasPlan && (
+            <button className="bg-black text-white py-[6px] px-4 text-sm rounded-md hover:opacity-75 transition cursor-pointer">
+              طرح من
+            </button>
+          )}
           <button className="border border-gray-200 py-[6px] px-4 text-sm rounded-md cursor-pointer">
             ورود یا ثبت نام
           </button>
@@ -48,9 +50,9 @@ export default function Header() {
               <button className="bg-black text-white py-[6px] px-4 text-sm rounded-md hover:opacity-75 transition cursor-pointer">
                 خواندن مقالات
               </button>
-              <button className="border border-gray-200 py-[6px] px-4 text-sm rounded-md cursor-pointer">
+              { !hasPlan && <button className="border border-gray-200 py-[6px] px-4 text-sm rounded-md cursor-pointer">
                 تهیه اشتراک
-              </button>
+              </button>}
             </div>
           </div>
           <div className="flex items-center justify-center image-hero-width">
