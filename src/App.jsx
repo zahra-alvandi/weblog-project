@@ -77,6 +77,9 @@ export default function App() {
           <h1 className="text-3xl font-bold">مقالات اخیر</h1>
         </div>
         <div className="container mx-auto grid grid-cols-4 items-center justify-center gap-8 mt-10 mb-52">
+          {/* {articles.filter(article => article.price === 0).map((article) => (
+            <Article key={article.id} {...article}></Article>
+          ))} */}
           {articles.map((article) => (
             <Article key={article.id} {...article}></Article>
           ))}
