@@ -1,6 +1,9 @@
 import React from "react";
 
 export default function Article({ title, author, img, price }) {
+  const onClickHandler = () => {
+    alert(`عنوان مقاله : ${title}`);
+  };
   return (
     <div>
       {/* <div className="my-5">
@@ -16,7 +19,15 @@ export default function Article({ title, author, img, price }) {
             />
           </header>
           <main className="border-b border-gray-300">
-            <h4 className="my-5 text-md font-bold">{title}</h4>
+            <h4
+              className="my-5 text-md font-bold"
+              // onClick={() => {
+              //   alert(`عنوان مقاله: ${title}`);
+              // }}
+              onClick={onClickHandler}
+            >
+              {title}
+            </h4>
             <p className="my-4 text-sm text-gray-500 text-justify">
               در این مقاله، به‌صورت گام‌به‌گام یاد می‌گیرید چطور یک پروژه ساده
               اما حرفه‌ای با پایتون بسازید که رزومه برنامه‌نویسی‌تون رو تقویت
