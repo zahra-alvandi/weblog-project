@@ -91,7 +91,7 @@
   }
 }
 
-@layer components {
+/* @layer components {
   .submenu {
     @apply hidden flex-col gap-y-3 pr-7 mt-3 text-sm text-zinc-600 dark:text-white;
   }
@@ -139,9 +139,7 @@
   .circle--sm {
     @apply w-[95px] h-[95px] border-white/80;
   }
-  /* .curve {
-    @apply dark:bg-zinc-800;
-  } */
+
 
   @media screen and (min-width: 1280px) {
     html.dark .products {
@@ -234,4 +232,4 @@
     width: calc(100% - 2rem);
     height: 1px;
   }
-}
+} */
