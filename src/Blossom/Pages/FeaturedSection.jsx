@@ -3,25 +3,25 @@ export default function FeaturedSection() {
     {
       id: 1,
       name: "Blush Romance",
-      price: "4,900,000",
+      price: "4,900,000 تومان",
       image: "/bloomyImages/flower1.png",
     },
     {
       id: 2,
       name: "White Serenity",
-      price: "5,900,000",
+      price: "5,900,000 تومان",
       image: "/bloomyImages/flower2.png",
     },
     {
       id: 3,
-      name: "Sunset Bloom",
-      price: "4,500,000",
+      name: "Lavender ",
+      price: "4,500,000 تومان",
       image: "/bloomyImages/flower3.png",
     },
     {
       id: 4,
       name: "Pink Whisper",
-      price: "5,200,000",
+      price: "5,200,000 تومان",
       image: "/bloomyImages/flower4.png",
     },
   ];
@@ -35,7 +35,7 @@ export default function FeaturedSection() {
             <h2 className="text-3xl md:text-4xl font-MorabbaLight py-2 text-[#2E2E2E]">
               پرفروش ترین های ما
             </h2>
-            <p className="mt-3 text-[#6B7280] text-[15px]">
+            <p className="mt-3 text-[#6B7280] text-md font-MorabbaLight">
               دسته گل‌های دستچین شده که مشتریان ما بیشتر دوست دارند.
             </p>
           </div>
@@ -76,12 +76,12 @@ export default function FeaturedSection() {
                   <button
                     className="text-[13px] px-4 py-2 rounded-full
                     bg-[#FCE7EC] text-[#E96A8D]
-                    hover:bg-[#E96A8D] hover:text-white
+                    hover:bg-[#E96A8D] hover:text-white hover:cursor-pointer
                     transition"
                   >
                     افزودن به سبد خرید
                   </button>
-                  <span className="text-[#E96A8D] font-semibold">
+                  <span className="text-[#E96A8D] font-DanaDemiBold text-[13px]">
                     {product.price}
                   </span>
                 </div>
