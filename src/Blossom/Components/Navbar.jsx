@@ -44,8 +44,8 @@ export default function Navbar() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-50 bg-[#FFF8F3]/80 backdrop-blur border-b border-black/5">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <header className="fixed top-9 right-0 left-0 z-50 hidden md:flex items-center w-[98%] lg:w-[90%] h-24 px-5 lg:px-10 mx-auto bg-[#fff8f3]/50 rounded-3xl backdrop-blur-[6px]">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <div className="h-[72px] flex items-center justify-between gap-3">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2">
