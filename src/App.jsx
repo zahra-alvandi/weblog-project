@@ -26,8 +26,17 @@ import "./App.css";
 
 // ! Blossom project imports
 import Main from "./Blossom/Pages/Main";
+import Navbar from "./Blossom/Components/Navbar";
 
 export default function App() {
+  // * Blossom Project
+  return (
+    <div>
+      <Navbar></Navbar>
+    </div>
+  );
+
+
   // const articles = [
   //   {
   //     id: 1,
@@ -360,12 +369,4 @@ export default function App() {
 
   //   </div>
   // );
-
-
-  // * Blossom Project
-  return(
-    <div>
-      <Main></Main>
-    </div>
-  )
 }
