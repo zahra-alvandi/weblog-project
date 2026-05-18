@@ -25,7 +25,7 @@ import "./App.css";
 // import Footer from "./CoffeeShop/Footer/Footer";
 
 // ! Blossom project imports
-import Main from "./Blossom/Pages/Main";
+import Hero from "./Blossom/Pages/Hero";
 import Navbar from "./Blossom/Components/Navbar";
 
 export default function App() {
@@ -33,9 +33,12 @@ export default function App() {
   return (
     <div>
       <Navbar></Navbar>
+      <div className="bg-art z-50">
+      <Hero className="min-h-screen bg-[#FFF8F3]"></Hero>
+
+      </div>
     </div>
   );
-
 
   // const articles = [
   //   {

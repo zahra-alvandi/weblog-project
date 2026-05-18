@@ -56,8 +56,7 @@
 @layer base {
   @font-face {
     font-family: "Dana";
-    src: url("/fonts/Dana/woff2/DanaFaNum-Regular.woff2")
-      format("woff2");
+    src: url("/fonts/Dana/woff2/DanaFaNum-Regular.woff2") format("woff2");
     font-display: swap;
   }
   @font-face {
@@ -67,21 +66,18 @@
   }
   @font-face {
     font-family: "Dana DemiBold";
-    src: url("/fonts/Dana/woff2/DanaFaNum-DemiBold.woff2")
-      format("woff2");
+    src: url("/fonts/Dana/woff2/DanaFaNum-DemiBold.woff2") format("woff2");
     font-display: swap;
   }
 
   @font-face {
     font-family: "Morabba Light";
-    src: url("/fonts/Morabba/woff2/Morabba-Light.woff2")
-      format("woff2");
+    src: url("/fonts/Morabba/woff2/Morabba-Light.woff2") format("woff2");
     font-display: swap;
   }
   @font-face {
     font-family: "Morabba Medium";
-    src: url("/fonts/Morabba/woff2/Morabba-Medium.woff2")
-      format("woff2");
+    src: url("/fonts/Morabba/woff2/Morabba-Medium.woff2") format("woff2");
     font-display: swap;
   }
   @font-face {
@@ -89,6 +85,12 @@
     src: url("/fonts/Morabba/woff2/Morabba-Bold.woff2") format("woff2");
     font-display: swap;
   }
+}
+
+.bg-art {
+  background-image: url(/public/bloomyImages/bg-art.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* @layer components {

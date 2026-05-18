@@ -49,21 +49,19 @@ export default function Navbar() {
         <div className="h-[72px] flex items-center justify-between gap-3">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2">
-            <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#FCE7EC]">
-              <span className="h-3 w-3 rounded-full bg-[#E96A8D]" />
-            </span>
+            <img src="/bloomyImages/logo.png" className="w-10 h-10 md:w-20 md:h-20" alt="" />
             <span className="text-[18px] font-MorabbaBold tracking-tight text-[#2E2E2E]">
-              گلینو
+              بلومی
             </span>
           </a>
 
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-7">
+          <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
-                className="text-[14px] text-[#2E2E2E]/80 hover:text-[#2E2E2E] transition"
+                className="text-md text-gray-800/80 hover:text-pink-700 transition"
               >
                 {l.label}
               </a>
@@ -71,7 +69,7 @@ export default function Navbar() {
           </nav>
 
           {/* Right actions (desktop) */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-5">
             {/* Search */}
             <label className="relative">
               <span className="sr-only">جستجو</span>
@@ -112,7 +110,7 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <button
             type="button"
-            className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/80 border border-black/10"
+            className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/80 transition"
             aria-label="Open menu"
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
@@ -145,13 +143,13 @@ export default function Navbar() {
                   <span className="h-3 w-3 rounded-full bg-[#E96A8D]" />
                 </span>
                 <span className="text-[18px] font-MorabbaBold text-[#2E2E2E]">
-                  گلینو
+                  بلومی
                 </span>
               </a>
 
               <button
                 type="button"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/80 border border-black/10"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/80 transition-all"
                 aria-label="Close menu"
                 onClick={() => setOpen(false)}
               >
