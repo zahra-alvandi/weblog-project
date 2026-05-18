@@ -27,15 +27,16 @@ import "./App.css";
 // ! Blossom project imports
 import Hero from "./Blossom/Pages/Hero";
 import Navbar from "./Blossom/Components/Navbar";
+import FeaturedSection from "./Blossom/Pages/FeaturedSection";
 
 export default function App() {
   // * Blossom Project
   return (
     <div>
       <Navbar></Navbar>
-      <div className="bg-art z-50">
+      <div>
       <Hero className="min-h-screen bg-[#FFF8F3]"></Hero>
-
+      <FeaturedSection></FeaturedSection>
       </div>
     </div>
   );
