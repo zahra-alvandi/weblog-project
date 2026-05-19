@@ -25,6 +25,7 @@ import "./App.css";
 // import Footer from "./CoffeeShop/Footer/Footer";
 
 // ! Blossom project imports
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Hero from "./Blossom/Pages/Hero";
 import Navbar from "./Blossom/Components/Navbar";
 import FeaturedSection from "./Blossom/Pages/FeaturedSection";

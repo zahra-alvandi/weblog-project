@@ -35,7 +35,6 @@ export default function Header() {
     <>
       {/* Desktop Header */}
       <header className="fixed top-9 right-0 left-0 z-50 hidden md:flex w-[98%] lg:w-[90%] h-24 px-5 lg:px-10 mx-auto bg-[#fff8f3]/50 rounded-3xl backdrop-blur-[6px] lg:container">
-        {/* FIX: container with full width */}
         <div className="flex w-full items-center justify-between gap-3">
           <div className="flex items-center justify-between gap-7">
             {/* Logo */}
@@ -66,6 +65,14 @@ export default function Header() {
 
           {/* Right actions */}
           <div className="hidden md:flex items-center gap-5">
+            {/* Login button اضافه شده */}
+            <a
+              href="/login"
+              className="inline-flex items-center justify-center rounded-full border border-black/10 bg-white/70 px-4 py-2 text-[14px] font-DanaDemiBold text-[#333] hover:bg-white transition"
+            >
+              ورود
+            </a>
+
             {/* Search */}
             <label className="relative">
               <input
@@ -103,6 +110,7 @@ export default function Header() {
           <img src="/bloomyImages/logo.png" className="w-9 h-9" alt="" />
           <h3 className="font-Morabba">بلومی</h3>
         </div>
+
         {/* Mobile menu button */}
         <button
           type="button"
@@ -119,10 +127,8 @@ export default function Header() {
         {/* Mobile overlay + panel */}
         {open && (
           <div className="md:hidden fixed inset-0 z-50">
-            {/* overlay */}
             <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
 
-            {/* panel */}
             <div
               ref={panelRef}
               className="absolute right-0 top-0 h-full w-[86%] max-w-[360px]
@@ -162,8 +168,6 @@ export default function Header() {
               {/* Search */}
               <div className="mt-6">
                 <label className="relative block">
-                  <span className="sr-only">جستجو</span>
-
                   <input
                     type="search"
                     placeholder="جستجوی دسته گل ..."
@@ -171,8 +175,7 @@ export default function Header() {
             pl-4 pr-10 py-3 text-[14px]
             outline-none focus:ring-2 focus:ring-[#E96A8D]/40"
                   />
-
-                  <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[#6B7280]">
+                  <span className="absolute right-3 top-1/2 -translate-y-1/2 text-[#6B7280]">
                     <SearchIcon />
                   </span>
                 </label>
@@ -196,6 +199,7 @@ export default function Header() {
 
               {/* Actions */}
               <div className="mt-7 flex items-center gap-3">
+                {/* Cart */}
                 <button
                   type="button"
                   className="relative inline-flex h-11 w-11 items-center justify-center
@@ -203,15 +207,12 @@ export default function Header() {
                   aria-label="Cart"
                 >
                   <CartIcon />
-
-                  <span
-                    className="absolute -top-1 -right-1 h-5 min-w-5 px-1
-          rounded-full bg-[#E96A8D] text-white text-[11px] leading-5 text-center"
-                  >
+                  <span className="absolute -top-1 -right-1 h-5 min-w-5 px-1 rounded-full bg-[#E96A8D] text-white text-[11px] leading-5 text-center">
                     2
                   </span>
                 </button>
 
+                {/* CTA */}
                 <a
                   href="#shop"
                   onClick={() => setOpen(false)}
@@ -224,6 +225,14 @@ export default function Header() {
                 </a>
               </div>
 
+              <a
+                href="/login"
+                onClick={() => setOpen(false)}
+                className="mt-4 inline-flex items-center justify-center rounded-xl border border-black/10 bg-white/80 px-4 py-3 text-[14px] font-semibold text-[#333] hover:bg-white transition"
+              >
+                ورود
+              </a>
+
               <p className="mt-6 text-[12px] text-[#6B7280]">
                 دسته گل‌های تازه • تحویل در همان روز
               </p>
@@ -234,6 +243,7 @@ export default function Header() {
     </>
   );
 }
+
 
 function SearchIcon(props) {
   return (
