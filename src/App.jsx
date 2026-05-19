@@ -28,6 +28,7 @@ import "./App.css";
 import Hero from "./Blossom/Pages/Hero";
 import Navbar from "./Blossom/Components/Navbar";
 import FeaturedSection from "./Blossom/Pages/FeaturedSection";
+import Testimonials from "./Blossom/Pages/Testimonials";
 
 export default function App() {
   // * Blossom Project
@@ -37,6 +38,7 @@ export default function App() {
       <div>
       <Hero className="min-h-screen bg-[#FFF8F3]"></Hero>
       <FeaturedSection></FeaturedSection>
+      <Testimonials></Testimonials>
       </div>
     </div>
   );
