@@ -36,7 +36,7 @@ const StarIcon = () => (
 export default function Testimonials() {
   return (
     <section className="py-20 bg-[#FDF7F2]">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="container mx-auto px-6">
         <div className="text-center mb-14">
           <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-[#FFF3F5] text-[#E07A8A] text-sm font-medium mb-4">
             نظرات مشتریان

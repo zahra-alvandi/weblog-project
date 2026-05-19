@@ -29,6 +29,9 @@ import Hero from "./Blossom/Pages/Hero";
 import Navbar from "./Blossom/Components/Navbar";
 import FeaturedSection from "./Blossom/Pages/FeaturedSection";
 import Testimonials from "./Blossom/Pages/Testimonials";
+import CTASection from "./Blossom/Pages/Ctasection";
+import AboutPreview from "./Blossom/Pages/AboutPreview";
+import Footer from "./Blossom/Pages/Footer";
 
 export default function App() {
   // * Blossom Project
@@ -39,6 +42,9 @@ export default function App() {
       <Hero className="min-h-screen bg-[#FFF8F3]"></Hero>
       <FeaturedSection></FeaturedSection>
       <Testimonials></Testimonials>
+      <CTASection></CTASection>
+      <AboutPreview></AboutPreview>
+      <Footer></Footer>
       </div>
     </div>
   );
