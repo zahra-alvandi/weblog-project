@@ -33,6 +33,7 @@ import Testimonials from "./Blossom/Pages/Testimonials";
 import CTASection from "./Blossom/Pages/Ctasection";
 import AboutPreview from "./Blossom/Pages/AboutPreview";
 import Footer from "./Blossom/Pages/Footer";
+import Login from "./Blossom/Pages/Login";
 
 export default function App() {
   // * Blossom Project
@@ -47,6 +48,7 @@ export default function App() {
       <AboutPreview></AboutPreview>
       <Footer></Footer>
       </div>
+      {/* <Login></Login> */}
     </div>
   );
 

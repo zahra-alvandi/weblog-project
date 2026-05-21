@@ -225,13 +225,13 @@ export default function Header() {
                 </a>
               </div>
 
-              <a
+              <link
                 href="/login"
                 onClick={() => setOpen(false)}
                 className="mt-4 inline-flex items-center justify-center rounded-xl border border-black/10 bg-white/80 px-4 py-3 text-[14px] font-semibold text-[#333] hover:bg-white transition"
               >
                 ورود
-              </a>
+              </link>
 
               <p className="mt-6 text-[12px] text-[#6B7280]">
                 دسته گل‌های تازه • تحویل در همان روز
